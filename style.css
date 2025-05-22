@@ -1,0 +1,268 @@
+/* Use a Google Font for a natural, friendly look */
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  background-color: #f5f3e7; /* Light beige background for the page */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #7c9473; /* Earthy green */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style the logo */
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #f5f3e7; /* Light beige */
+  letter-spacing: 2px;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Style each navigation link */
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f5f3e7; /* Light beige */
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+}
+
+/* Change background on hover */
+nav ul li a:hover {
+  background-color: #a98467; /* Earthy brown */
+  color: #fff;
+}
+
+/* Style the hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #f5f3e7;
+  cursor: pointer;
+}
+
+/* Hero section styles */
+.hero {
+  background: linear-gradient(rgba(124,148,115,0.7), rgba(169,132,103,0.5)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+  /* Green and brown overlay for earthy feel */
+  color: #2d2a22; /* Deep brown text for contrast */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Headline in hero section */
+.hero h1 {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 16px;
+  color: #3e4c35; /* Dark earthy green */
+}
+
+/* Subtext in hero section */
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  color: #e7e7e7; /* Earthy brown */
+}
+
+/* Destinations section styles */
+.destinations {
+  padding: 40px 10px 20px 10px;
+  background-color: #ede6db; /* Soft earthy background */
+  text-align: center;
+}
+
+.destinations h2 {
+  color: #3e4c35; /* Dark earthy green */
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+/* Container for the cards */
+.card-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically by default */
+  gap: 24px; /* Space between cards */
+  align-items: center;
+  max-width: 900px;
+  margin: 20px auto; /* Center the container */
+}
+
+/* Individual destination card */
+.destination-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.08);
+  padding: 20px;
+  width: 100%;
+  max-width: 340px;
+  text-align: left;
+  transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
+  border: 2px solid transparent; /* Add border for hover effect */
+  padding-bottom: 20px;
+}
+
+.destination-card:hover {
+  box-shadow: 0 8px 24px rgba(60, 60, 60, 0.20); /* Stronger shadow */
+  transform: translateY(-8px) scale(1.03); /* Slightly lift and scale card */
+  border: 2px solid #7c9473; /* Earthy green border on hover */
+}
+
+.destination-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.destination-card h3 {
+  margin: 0 0 10px 0;
+  color: #7c9473; /* Earthy green */
+  font-size: 1.2em;
+}
+
+.destination-card p {
+  margin: 0;
+  color: #5c4326; /* Earthy brown */
+  font-size: 1em;
+}
+
+/* Call to Action section styles */
+.cta-section {
+  background-color: #7c9473; /* Earthy green */
+  color: #f5f3e7; /* Light beige */
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 80%; /* Allow section to shrink on small screens */
+  box-sizing: border-box; /* Include padding in width */
+  margin: 40px auto; /* Center the section */
+}
+
+.cta-section h2 {
+  margin-bottom: 24px;
+  font-size: 2em;
+  font-family: 'Lato', Arial, sans-serif;
+  color: #f5f3e7;
+}
+
+.cta-inspire {
+  font-size: 1.1em;
+  margin-bottom: 22px;
+  color: #ede6db; /* Soft earthy accent */
+}
+
+/* Style for the call to action button */
+.cta-button {
+  display: inline-block;
+  background-color: #a98467; /* Earthy brown */
+  color: #fff;
+  font-size: 1.1em;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.10);
+}
+
+.cta-button:hover {
+  background-color: #5c4326; /* Darker brown on hover */
+  transform: translateY(-3px) scale(1.04);
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 700px) {
+  .card-container {
+    flex-direction: row; /* Arrange cards in a row */
+    justify-content: center;
+  }
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 5px;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.show {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .cta-section {
+    padding: 20px 5vw; /* Use viewport width for proportional side padding */
+    font-size: 1em;
+    margin: 28px auto 20px auto;
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  .cta-section h2 {
+    font-size: 1.2em;
+  }
+
+  .cta-inspire {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    font-size: 1em;
+    padding: 12px 20px;
+  }
+}
